@@ -1,0 +1,65 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  background-attachment: fixed;
+}
+
+canvas {
+  display: block;
+  position:fixed; 
+  top:285px; 
+  left:500px; 
+  z-index:3;
+  margin-top: 7rem;
+  margin-right: 5rem;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+
+}
+
+h1{
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+h2{ /*this is the line giving trouble atm*/
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 3px white;
+  box-shadow: 2px 2px 35px 2px greenyellow;
+  padding: 12px;
+  font-weight: 700;
+  font-size: larger;
+  align-items: center;
+  letter-spacing: 3px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  color: #f2f2f2;
+  margin-right: 4px;
+  padding: 14px 16px 1px 10px;
+  text-decoration: none;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: black;
+}

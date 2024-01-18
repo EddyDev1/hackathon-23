@@ -1,0 +1,80 @@
+<!--
+Author and Reference: https://github.com/federicoazzu/mscbot/blob/main/mscbot/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>AI and Automation</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <!--<link rel="stylesheet" href="static/css/chat.css">-->
+    <!--<link rel="stylesheet" href="static/css/home.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+<body>
+
+  <nav class="topnav" > 
+    <div><img src="forNavBar.jpg" style="width: 7vw;"></div>
+      <a href ="https://nsbehack2023.edwardasante1.repl.co">Home </a>
+      <a href ="https://abtai.edwardasante1.repl.co">About AI </a>
+      <a href ="https://chattest.edwardasante1.repl.co"">Chatbot </a> <!-- load as page instead as div -->
+      <a href ="https://tttpage.edwardasante1.repl.co">Tic Tac Toe </a>
+      <a href ="https://cbgs.edwardasante1.repl.co">Cool Bot Games</a>
+  </nav>
+
+  <h1>Welcome to our Chatbot<img src="forChatBot.png" style="width: 10vw; position: relative; padding-left: 25px;"></h1>
+  <p>Click chat with us to begin chatting! Have fun!</p>
+    <!-- CHAT BAR BLOCK -->
+    <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible">Chat with us!
+            <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+        </button>
+
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- Messages -->
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                        </div>
+
+                        <!-- User input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input-box" type="text" name="msg"
+                                    placeholder="Tap 'Enter' to send a message">
+                                <p></p>
+                            </div>
+
+                            <div class="chat-bar-icons">
+                                <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                    onclick="heartButton()"></i>
+                                <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                    onclick="sendButton()"></i>
+                            </div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+
+</html>
